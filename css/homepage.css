@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+    background: linear-gradient(to top,#a488e0,#a488e0);
+    height: 100px;;
+  }
+  
+  .container {
+    max-width: 90rem;
+    margin: 2rem auto;
+    padding: 0px 2rem;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+  }
+  .logo {
+    font-size: 2rem;
+    opacity: 0.7;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem d2rem;
+    align-items: center;
+    background-color: rgb(135, 40, 244);
+  }
+  
+  .model {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .model a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .model a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .active {
+    color: rgb(0, 0, 0) !important;
+  }
+  
+  button {
+    font-size: 2rem;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #6517e4, #4f13d1);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background: white;
+    outline: 1px solid rgb(0, 0, 0);
+    color: rgb(1, 0, 0);
+    border: none;
+  }
+  
+  .row {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info {
+    display:flexbox;
+    flex-direction: row;
+  
+  }
+  .short-info {
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    font-family: serif;
+    font-size: 3rem;
+    margin-bottom: 0.9rem;
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+    color: #8806fa;
+  }
+  .hero-sub-heading {
+    font-size: 2rem;
+    opacity: 0.7;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .users {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0px;
+  }
+  .user {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(153, 145, 167, 0.651);
+  }
+  .learn-more {
+    align-self: start;
+    margin-top: 3rem;
+  }
+  
+  
+  
+  /* media queries */
+  
+  @media only screen and (max-width: 800px) {
+    .items {
+      display: none;
+    }
+  
+    .row {
+      grid-template-columns: 1fr;
+    }
+    .learn-more {
+      align-self: start;
+      margin: 1rem 0px;
+    }
+  }
